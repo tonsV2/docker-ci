@@ -11,6 +11,3 @@ services:
       REGISTRY_USER: $[REGISTRY_USER}
       REGISTRY_PASS: ${REGISTRY_PASS}
       TARGET: prod
-
-volumes:
-  database: {}
