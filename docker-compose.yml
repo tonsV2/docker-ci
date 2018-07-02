@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  ci:
+    image: tons/dc-ci
+    build: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - .:/src
+    environment:
+      REGISTRY_USER: $[REGISTRY_USER}
+      REGISTRY_PASS: ${REGISTRY_PASS}
+      TARGET: prod
+
+volumes:
+  database: {}
