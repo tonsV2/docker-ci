@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   ci:
-    image: tons/dc-ci
+    image: tons/dc-ci:${TAG}
     build: .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
