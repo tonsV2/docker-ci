@@ -1,5 +1,6 @@
 FROM tmaier/docker-compose
 ENV TARGET release
 ENV REGISTRY_HOST " "
+ADD build-push.sh /
 WORKDIR /src
-CMD docker login -u $REGISTRY_USER -p $REGISTRY_PASS $REGISTRY_HOST && docker-compose build $TARGET && docker-compose push $TARGET
+CMD exec /build-push.sh
