@@ -10,4 +10,4 @@ services:
     environment:
       REGISTRY_USER: ${REGISTRY_USER}
       REGISTRY_PASS: ${REGISTRY_PASS}
-      TARGET: ci
+      SERVICE: ci

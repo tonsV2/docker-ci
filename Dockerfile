@@ -1,5 +1,5 @@
 FROM tmaier/docker-compose
-ENV TARGET " "
+ENV SERVICE " "
 ENV REGISTRY_URL " "
 WORKDIR /ci
 ADD build-push.sh .
