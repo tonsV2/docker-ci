@@ -3,4 +3,4 @@ ENV SERVICE " "
 ENV REGISTRY_URL " "
 WORKDIR /ci
 ADD build-push.sh .
-CMD exec ./build-push.sh
+CMD exec /ci/build-push.sh
