@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  ci:
+  release:
     image: tons/dc-ci:${TAG}
     build: .
     volumes:
@@ -10,4 +10,4 @@ services:
     environment:
       REGISTRY_USER: ${REGISTRY_USER}
       REGISTRY_PASS: ${REGISTRY_PASS}
-      SERVICE: ci
+      SERVICE: release
