@@ -1,6 +1,6 @@
 FROM tmaier/docker-compose
 ENV SERVICE " "
 ENV REGISTRY_URL " "
-WORKDIR /ci
-ADD build-push.sh /
-CMD exec /build-push.sh
+WORKDIR /src
+ADD build-push.sh /ci/
+CMD exec /ci/build-push.sh
